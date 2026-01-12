@@ -1,3 +1,5 @@
+schema_version: 1
+
 context:
   name: elecsolver
   version: "1.0.6"
@@ -31,14 +33,15 @@ requirements:
 
 tests:
   - python:
-    imports:
-    - ElecSolver
+      imports:
+        - ElecSolver
   - script:
     - python -m pytest tests
     requirements:
-    - python {{ python_min }}
-    - python-mumps
-    - pytest
+      run:
+        - python {{ python_min }}
+        - python-mumps
+        - pytest
     files:
       source:
         - tests
@@ -52,3 +55,4 @@ about:
 extra:
   recipe-maintainers:
     - williampiat3
+    - Pimss
