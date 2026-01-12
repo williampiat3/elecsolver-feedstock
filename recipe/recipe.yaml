@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: elecsolver
-  version: "1.0.6"
+  version: 1.0.6
 
 package:
   name: ${{ name|lower }}
@@ -48,7 +48,7 @@ tests:
 
 about:
   homepage: https://github.com/williampiat3/ElecSolver
-  summary: 'Electric system formulation in Python'
+  summary: Electric system formulation in Python
   license: MIT
   license_file: LICENSE.txt
 
