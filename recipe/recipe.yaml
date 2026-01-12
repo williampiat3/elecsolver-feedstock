@@ -26,9 +26,9 @@ requirements:
     - pip
   host:
     - pip
-    - python ${{ python_min }}
+    - python
   run:
-    - python >=${{ python_min }}
+    - python
     - numpy
     - networkx
     - scipy
@@ -41,7 +41,7 @@ tests:
       - python -m pytest tests
     requirements:
       run:
-        - python ${{ python_min }}
+        - python
         - python-mumps
         - pytest
     files:
