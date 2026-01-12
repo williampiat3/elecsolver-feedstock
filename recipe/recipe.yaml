@@ -25,7 +25,8 @@ requirements:
     - setuptools-scm >=8.0
     - pip
   host:
-    - python >=${{ python_min }}
+    - pip
+    - python ${{ python_min }}
   run:
     - python >=${{ python_min }}
     - numpy
@@ -40,7 +41,7 @@ tests:
       - python -m pytest tests
     requirements:
       run:
-        - python >=${{ python_min }}
+        - python ${{ python_min }}
         - python-mumps
         - pytest
     files:
