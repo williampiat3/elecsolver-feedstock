@@ -20,11 +20,12 @@ build:
   number: 1
 
 requirements:
-  host:
-    - python ${{ python_min }}
+  build:
     - setuptools >=60
     - setuptools-scm >=8.0
     - pip
+  host:
+    - python ${{ python_min }}
   run:
     - python >=${{ python_min }}
     - numpy
@@ -36,7 +37,7 @@ tests:
       imports:
         - ElecSolver
   - script:
-    - python -m pytest tests
+      - python -m pytest tests
     requirements:
       run:
         - python ${{ python_min }}
