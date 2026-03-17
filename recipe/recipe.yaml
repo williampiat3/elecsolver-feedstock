@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/williampiat3/ElecSolver/archive/refs/tags/${{ version }}.tar.gz
-  sha256: ca5d2a6a240f3cccbc2feab26388665c78ee14f6ae3471e5b4f73496402b7a11
+  sha256: b4c5db16d6e08c6e924a261639551f685735c561f3949424de1075ec94df8ff3
 
 
 
