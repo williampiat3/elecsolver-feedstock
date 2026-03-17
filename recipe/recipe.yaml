@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: elecsolver
-  version: 1.0.7
+  version: 2.0.0
 
 package:
   name: ${{ name|lower }}
