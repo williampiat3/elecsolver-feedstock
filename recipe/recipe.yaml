@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: elecsolver
-  version: 2.1.0
+  version: 2.2.0
 
 package:
   name: ${{ name|lower }}
@@ -28,7 +28,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy
-    - networkx
     - scipy
 
 tests:
@@ -42,6 +41,7 @@ tests:
         - python ${{ python_min }}.*
         - python-mumps
         - pytest
+        - networkx
     files:
       source:
         - tests
